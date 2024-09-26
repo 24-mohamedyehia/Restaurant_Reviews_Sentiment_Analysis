@@ -1,0 +1,26 @@
+.navbar {
+    background-color: #000000;
+}
+
+.navbar .navbar-brand,
+.navbar .nav-link {
+    color: white !important;
+}
+
+.navbar .nav-link:hover {
+    color: #ddd !important;
+}
+
+.footer {
+    background-color: #f3eded;
+    color: white;
+    padding: 20px 0;
+}
+
+.footer a {
+    margin: 0 10px;
+}
+
+.footer p {
+    margin: 0;
+}
