@@ -2,7 +2,6 @@ flask==3.0.3
 nltk==3.8.1
 scikit-learn==1.5.2
 joblib==1.4.2
-re==2.2.1
 gunicorn==20.0.4       # A Python WSGI HTTP server for running web applications in production. It’s commonly used to deploy Flask or Django apps.
 Jinja2==2.11.3         # A templating engine for Python, used with Flask to create dynamic HTML by rendering variables and data in templates.
 Werkzeug===1.0.1       # A library used in Python web frameworks like Flask to handle HTTP requests, routing, and debugging. It helps web apps communicate with servers.
