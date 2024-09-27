@@ -46,7 +46,8 @@ app = Flask(__name__)
 
 @app.route('/')
 def home():
-    return render_template('index.html')
+    # When first loading the page, keep Review empty
+    return render_template('index.html', Sentiment='', Review='')
 
 
 @app.route('/predict', methods=['POST'])
@@ -59,7 +60,7 @@ def predict():
 
     sentiment_output = get_sentiment(review)
 
-    return render_template('index.html', Sentiment=f"Sentiment Is: {prediction_map[sentiment_output]}")
+    return render_template('index.html', Sentiment=f"{prediction_map[sentiment_output]}", Review=review)
 
 
 
