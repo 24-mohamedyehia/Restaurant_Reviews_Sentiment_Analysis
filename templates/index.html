@@ -23,35 +23,42 @@
         </div>
     </nav>
 
-
+    <!-- Project Name -->
+    <div class="container project-name my-3 mb-0 pb-0 ">
+        <h2 class="text-center my-3 ">Sentiment Analysis Project</h2>
+    </div>
 
     <!-- Prediction Form -->
-    <div class="container my-5">
-        <h2 class="text-center">Sentiment Analysis Project</h2>
-        <form action="{{ url_for('predict') }}" method="post">
+    <div class="container my-1">
+        <form id="sentimentForm" action="{{ url_for('predict') }}" method="post">
             <div class="mb-3">
-                <textarea class="form-control" name="Review" placeholder="Type Review Here" required rows="2" style="resize: none;"></textarea>
+                <textarea id="reviewTextArea" class="form-control" name="Review" placeholder="Type Review Here" required rows="2" style="resize: none;">{{ Review }}</textarea>
             </div>
             <div class="d-flex justify-content-center"> <!-- Center align button and result -->
-                <button type="submit" class="btn btn-primary me-2">Enter</button> <!-- Add margin end -->
                 {% if Sentiment %}
-                <div class="result" style="font-size: 1.5rem; margin-left: 10px;">{{ Sentiment }}</div>
+                <div id="sentimentResult" class="result" style="font-size: 1.5rem; margin-left: 10px;">
+                    <span>Sentiment Is: </span><span id="sentimentValue" style="color: rgb(71, 219, 71);">{{ Sentiment }}</span>
+                </div>
                 {% endif %}
+            </div>
+            <div class="d-flex justify-content-center my-4">
+                <button type="submit" class="btn btn-primary me-2 m-3">Enter</button> <!-- Add margin end -->
+                <button type="button" class="btn btn-secondary me-2 m-3" onclick="resetForm()">Reset</button> <!-- Add margin end -->
             </div>
         </form>
     </div>
 
 
+
     <!-- Footer Section with White Background -->
-    <footer class="footer text-center bg-light text-dark ">
+    <footer class="footer text-center bg-light text-dark pb-2 bt-0">
         <div class="container">
-            <a href="https://www.linkedin.com/in/24-mohamed-yehia/" target="_blank"><img src="./static/img/linkedin.png" alt="Linkedin" width="30"></a>
-            <a href="https://www.kaggle.com/tfmohamedyahia" target="_blank"><img src="../static/img/4373210_kaggle_logo_logos_icon.png" alt="Kaggle" width="30"></a>
+            <a href="https://www.linkedin.com/in/24-mohamed-yehia/" target="_blank"><img src="./static/img/linkedin.png" alt="Linkedin" width="25"></a>
+            <a href="https://www.kaggle.com/tfmohamedyahia" target="_blank"><img src="../static/img/4373210_kaggle_logo_logos_icon.png" alt="Kaggle" width="25"></a>
+            <a href="https://wa.me/+201224475106" target="_blank"><img src="../static/img/whatsapp.png" alt="WhatsApp" width="25"></a>
             <p class="mt-2">Phone: +20 122 4475 106 | tfmohamedyahia@gmail.com</p>
         </div>
     </footer>
-
-
     <script src="./static/js/bootstrap.js"></script>
     <script src="./static/js/jquery-3.7.1.min.js"></script>
     <script src="./static/js/popper.min.js"></script>
