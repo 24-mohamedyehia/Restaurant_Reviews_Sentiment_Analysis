@@ -2,7 +2,7 @@
 
 This is implementation for sentiment analysis project
 
-![alt text](image.png)
+![alt text](./static/img/image.png)
 
 ## Requirements
 
