@@ -34,22 +34,18 @@ a:hover {
 
 span {
     margin-right: 5px;
+    color: black;
 }
 
 .text-center {
-    color: rgb(16, 128, 192);
-    
-}
-
-.result {
-    color:rgb(55, 211, 138)
+    color: rgb(0, 0, 0);
     
 }
 
 .footer {
     background-color: #f3eded;
     color: #f6f8fa;
-    padding: 20px 0;
+    padding: 10px 0;
 }
 
 .footer a {
@@ -66,5 +62,7 @@ span {
     padding-right: 30px; /* Add right padding */
 }
 
-
+.project-name {
+    max-height: 80px;
+}
 
