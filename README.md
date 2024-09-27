@@ -47,7 +47,7 @@ Set your environment variables in the `.env` file. Like `OPENAI_API_KEY` value.
 $ gunicorn app:app --reload --host 0.0.0.0 --port 5000
 ```
 
-## All Models with Files
+## ML Models with Files
 
 | Model Name                      |   Model                            |
 |---------------------------------|------------------------------------|
