@@ -6,7 +6,7 @@ This is implementation for sentiment analysis project ( Restaurant Reviews )
 
 ## Requirements
 
-- Python 3.8 or leter
+- Python 3.9 or leter
 
 ### Install Python Using Miniconda
 
