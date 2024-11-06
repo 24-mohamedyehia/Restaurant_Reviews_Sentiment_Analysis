@@ -1,6 +1,6 @@
 # Sentiment Analysis 
 
-This is implementation for sentiment analysis project
+This is implementation for sentiment analysis project ( Restaurant Reviews )
 
 ![alt text](./static/img/image.png)
 
