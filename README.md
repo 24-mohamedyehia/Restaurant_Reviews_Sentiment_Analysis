@@ -42,9 +42,15 @@ $ cp .env.example .env
 Set your environment variables in the `.env` file. Like `OPENAI_API_KEY` value.
 
 
-### Run the Flask server
+### Run the Flask on server
 ```bash
 $ gunicorn app:app --reload --host 0.0.0.0 --port 5000
+```
+## (OR)
+
+### Run Falsk Local
+```bash
+$ python app.py
 ```
 
 ## ML Models with Files
